@@ -101,3 +101,11 @@
 
 # r = 1/2 - (1/4)*(math.sin(5/2*(math/pi) - 8*a))
 # print("Result: ", r)
+
+
+# 6 a
+# import math
+
+# a = float(input("Enter a:"))
+# r = math.cos(a) + (math.sin(3*(math.pi) - a)**2 + 3*(math.cos(3*a)))
+# print("Result: ", r)
