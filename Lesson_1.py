@@ -156,13 +156,30 @@
 # import math
 
 # a = float(input("Enter a:"))
-# r = math.cos(2*a) + math.cos(a) + math.cos(6*a) + math.cos(7*a)
+# r = 1 - 0.25*((math.sin(2*a))**2) + math.cos(2*a)
 # print("Result: ", r)
 
 
 # 9 b
-import math
+# import math
 
-a = float(input("Enter a:"))
-r = math.log(abs(a - 12.5 * (a**9)), 5)
-print("Result: ", r)
+# a = float(input("Enter a:"))
+# r = (math.cos(a))**2 + (math.cos(a))**4
+# print("Result: ", r)
+
+
+# 10 a
+# import math
+
+# a = float(input("Enter a:"))
+# r = math.cos(2*a) + math.cos(a) + math.cos(6*a) + math.cos(7*a)
+# print("Result: ", r)
+
+
+
+# 10 b
+# import math
+
+# a = float(input("Enter a:"))
+# r = math.log(abs(a - 12.5 * (a**9)), 5)
+# print("Result: ", r)
