@@ -49,7 +49,7 @@
 # x = float(input("Enter x:"))
 # y = float(input("Enter y:"))
 
-# r = (1 + y)(((x + (y)/(x*x + 4)))/((math.exp(-x - 2) + 1)/(x*x + 4)))
+# r = (1 + y)*((x + (y)/(x*x + 4)))/((math.exp(-x - 2) + 1)/(x*x + 4))
 # print("Result: ", r)
 
 
@@ -99,7 +99,7 @@
 
 # a = float(input("Enter a:"))
 
-# r = 1/2 - (1/4)*(math.sin(5/2*(math/pi) - 8*a))
+# r = 1/2 - (1/4)*(math.sin(5/2*(math.pi) - 8*a))
 # print("Result: ", r)
 
 
@@ -109,3 +109,60 @@
 # a = float(input("Enter a:"))
 # r = math.cos(a) + (math.sin(3*(math.pi) - a)**2 + 3*(math.cos(3*a)))
 # print("Result: ", r)
+
+
+# 6 b
+# import math
+
+# a = float(input("Enter a:"))
+# r = 2 * (math.sqrt(2)) * (math.cos(a)) * (math.sin((math.pi/4) + 2 *a))
+# print("Result: ", r)
+
+
+
+# 7 a
+# import math
+
+# a = float(input("Enter a:"))
+# r = (math.sin(2*a) + math.sin(5*a) - math.cos(3*a)) / (math.cos(a) + 1 - 2 * ((math.sin(2*a))**2))
+# print("Result: ", r)
+
+
+# 7 b
+# import math
+
+# a = float(input("Enter a:"))
+# r = 2 * (math.sin(a))
+# print("Result: ", r)
+
+
+# 8 a
+# import math
+
+# a = float(input("Enter a:"))
+# r = (math.sin(2*a) + math.sin(5*a) - math.sin(3*a)) / (math.cos(a) - math.cos(3*a) + math.cos(5*a))
+# print("Result: ", r)
+
+
+# 8 b
+# import math
+
+# a = float(input("Enter a:"))
+# r = math.tan(3*a)
+# print("Result: ", r)
+
+
+# 9 a
+# import math
+
+# a = float(input("Enter a:"))
+# r = math.cos(2*a) + math.cos(a) + math.cos(6*a) + math.cos(7*a)
+# print("Result: ", r)
+
+
+# 9 b
+import math
+
+a = float(input("Enter a:"))
+r = math.log(abs(a - 12.5 * (a**9)), 5)
+print("Result: ", r)
