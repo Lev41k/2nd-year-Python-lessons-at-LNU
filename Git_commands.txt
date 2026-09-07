@@ -1,0 +1,80 @@
+==================== GIT CHEAT SHEET ====================
+
+# ---------- SETUP ----------
+git --version                            # show Git version
+git config --global user.name "Name"     # set name for all repos
+git config --global user.email "email"   # set email for all repos
+git config user.name "Name"              # set name for current repo only
+git config user.email "email"            # set email for current repo only
+git config --list                        # show all settings
+
+# ---------- START / DOWNLOAD ----------
+git init                                 # make current folder a Git repo
+git clone URL                            # copy a GitHub repo to your PC
+git remote add origin URL                # connect local repo to GitHub
+git remote set-url origin URL            # change the connected GitHub URL
+git remote -v                            # show connected GitHub repos
+
+# ---------- CHECK ----------
+git status                               # what changed / what is staged
+git diff                                 # show exact changed lines
+git log                                  # full commit history
+git log --oneline                        # short commit history
+git blame file                           # who changed each line
+
+# ---------- SAVE CHANGES ----------
+git add file                             # stage one file
+git add .                                # stage all changes
+git commit -m "message"                  # save snapshot locally
+git commit -am "message"                 # stage tracked files + commit
+
+# ---------- SYNC WITH GITHUB ----------
+git pull                                 # download + apply latest changes
+git fetch                                # download only, don't apply
+git push                                 # upload commits to GitHub
+git push -u origin main                  # first push of a new branch
+
+# ---------- BRANCHES ----------
+git branch                               # list branches
+git branch name                          # create branch
+git switch name                          # switch to branch
+git switch -c name                       # create + switch to new branch
+git merge name                           # merge branch into current one
+git branch -d name                       # delete local branch
+git push -u origin name                  # upload branch to GitHub
+
+# ---------- UNDO ----------
+git restore file                         # discard uncommitted changes in file
+git restore --staged file                # unstage file, keep changes
+git reset --soft HEAD~1                  # undo last commit, keep changes
+git reset --hard HEAD~1                  # undo last commit, DELETE changes (danger)
+git revert commit-id                     # make new commit that undoes an old one
+
+# ---------- STASH ----------
+git stash                                # temporarily hide unfinished changes
+git stash list                           # show saved stashes
+git stash pop                            # restore latest stash
+
+# ---------- FILES ----------
+git rm file                              # delete file from repo + disk
+git rm --cached file                     # stop tracking file, keep on disk
+git mv old new                           # rename or move a file
+
+# ---------- HELP ----------
+git help command                         # full help for a command
+git command -h                           # short help for a command
+
+# ---------- DAILY WORKFLOW ----------
+git pull
+# ...edit your files...
+git status
+git add .
+git commit -m "what changed"
+git push
+
+# ---------- DANGEROUS, AVOID UNTIL NEEDED ----------
+git reset --hard                         # permanently deletes changes
+git push --force                         # overwrites GitHub history
+git clean -fd                            # deletes untracked files/folders
+
+=========================================================
