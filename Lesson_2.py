@@ -27,11 +27,9 @@
 # minutes_left = t%60
 # h += hours_left
 # m += minutes_left
-
 # if m >= 60:
 #     h += 1
 #     m -= 60
-
 # print(h, ":",m)
 
 
@@ -73,12 +71,9 @@
 # 11
 # x = 3
 # y = 5
-
 # z = min(x,y)
 # x = max(x,y)
-
 # y = z
-
 # print("x =", x, "y =", y)
 
 
@@ -107,7 +102,6 @@
 # odyn = a%10
 # sot = a//100
 # des = (a-100*sot - odyn)//10
-
 # print(100*odyn + 10*des + sot)
 
 
@@ -148,7 +142,6 @@
 # first_2 = first%10
 # second_1 = second//10
 # second_2 = second%10
-
 # print(1000*first_2 + 100*first_1 + 10*second_2 + second_1)
 
 
@@ -166,7 +159,7 @@
 
 
 # 23
-a = 3
-b = 4
-c = (a**2 + b**2)**(1/2)
-print("Perymetr:", a+b+c, "Plosha:", a*b/2)
+# a = 3
+# b = 4
+# c = (a**2 + b**2)**(1/2)
+# print("Perymetr:", a+b+c, "Plosha:", a*b/2)
