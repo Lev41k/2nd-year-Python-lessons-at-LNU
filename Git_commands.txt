@@ -1,5 +1,6 @@
 ==================== GIT CHEAT SHEET ====================
 
+
 # ---------- SETUP ----------
 git --version                            # show Git version
 git config --global user.name "Name"     # set name for all repos
@@ -76,5 +77,6 @@ git push
 git reset --hard                         # permanently deletes changes
 git push --force                         # overwrites GitHub history
 git clean -fd                            # deletes untracked files/folders
+
 
 =========================================================
